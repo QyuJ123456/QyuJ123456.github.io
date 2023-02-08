@@ -3,33 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <title>flicker的帮助文档</title>
-    <style type="text/css">
+    <style>
         em.important{color:red;}
+        li{
+            float: left;
+        }
+        .a1{
+            display: block;
+            width: 100px;
+            color: white;
+        }
+        ul{
+            position: fixed;
+            top: 0;
+            width: 100%;
+            background-color: grey;
+        }
+        .div1{
+            position: absolute;
+            top: 5%;
+            width: 100%;
+        }
     </style>
 </head>
 <body>
-    <h1 style="text-align: center;">flicker帮助文档</h1>
-    <em class="important">别问我怎么这么简洁，因为我不怎么会写html文档(颓废)</em>
-    <hr />
-    <div style="font-family: -apple-system,system-ui">
-        <p>日常一些功能:</p>
-        <p>&emsp;今日运势：flicker 今日运势</p>
-        <p>&emsp;今日人品：flicker 今日人品<em class="important">&emsp;别问为什么有两个差不多功能的，问就是写完运势之后发现，那个让我做这样的功能的人让我写的是人品，我还懒得删</em></p>
-        <p>&emsp;戳一戳：双击flicker的头像（</p>
-        <p>&emsp;我与你同在：直接发送flicker</p>
+    <div>
+        <ul>
+            <li><a href="#rc" class="a1">日常功能</a></li>
+            <li><a href="#arcaea" class="a1">arcaea</a></li>
+            <li><a href="#malody" class="a1">malody</a></li>
+        </ul>
     </div>
-    <div style="font-family: Consolas,system-ui">
-        <p>arcaea:</p>
-        <p>&emsp;绑定账户：flicker a bind 用户名/id<em class="important">&emsp;我可没写账户存在检测，所以要记着点账户，拼错了查不了别找我(溜）</em></p>
-        <p>&emsp;最近一次游玩记录：flicker a</p>
-        <p>&emsp;指定谱面最高记录：flicker a info 谱面名称/谱面别名<em class="important">&emsp;有的别名可能AUA不支持，别找我，我懒得再新建一个文档来记录(颓废)</em></p>
-        <p>&emsp;查讯best30：flicker a b30</p>
-    </div>
-    <div style="font-family: Century,system-ui">
-        <p>malody:</p>
-        <p>&emsp;绑定账户：flicker ma bind 用户名</p>
-        <p>&emsp;最近一次打出来的新高：flicker ma</p>
-        <p>&emsp;最近十个打出新高的谱面最高记录：flicker ma info 谱面名称<em class="important">&emsp;有可能不是你想要的难度。如果这样，请加上名称后面的所有内容(</em></p>
+    <div class="div1">
+        <h1 style="text-align: center;">flicker帮助文档</h1>
+        <em class="important">别问我怎么这么简洁，因为我不怎么会写html文档(颓废)</em>
+        <hr />
+        <div style="font-family: -apple-system,system-ui">
+            <p><a id="rc">日常一些功能:</a></p>
+            <p>&emsp;今日运势：flicker 今日运势</p>
+            <p>&emsp;今日人品：flicker 今日人品<em class="important">&emsp;别问为什么有两个差不多功能的，问就是写完运势之后发现，那个让我做这样的功能的人让我写的是人品，我还懒得删</em></p>
+            <p>&emsp;戳一戳：双击flicker的头像（</p>
+            <p>&emsp;我与你同在：直接发送flicker</p>
+        </div>
+        <div style="font-family: Consolas,system-ui">
+            <p><a id="arcaea">arcaea:</a></p>
+            <p>&emsp;绑定账户：flicker a bind 用户名/id<em class="important">&emsp;我可没写账户存在检测，所以要记着点账户，拼错了查不了别找我(溜）</em></p>
+            <p>&emsp;最近一次游玩记录：flicker a</p>
+            <p>&emsp;指定谱面最高记录：flicker a info 谱面名称/谱面别名 指定难度/默认ftr<em class="important">&emsp;有的别名可能AUA不支持，别找我，我懒得再新建一个文档来记录(颓废)</em></p>
+            <p>&emsp;查讯best30：flicker a b30</p>
+        </div>
+        <div style="font-family: Century,system-ui">
+            <p><a id="malody">malody:</a></p>
+            <p>&emsp;绑定账户：flicker ma bind 用户名</p>
+            <p>&emsp;最近一次打出来的新高：flicker ma</p>
+            <p>&emsp;最近十个打出新高的谱面最高记录：flicker ma info 谱面名称<em class="important">&emsp;有可能不是你想要的难度。如果这样，请加上名称后面的所有内容(</em></p>
+        </div>
     </div>
 </body>
 </html>
